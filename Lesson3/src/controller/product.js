@@ -1,5 +1,5 @@
 import Joi from "joi"
-import productSchema from '../models/product'
+import productSchema from '../models/product.js'
 
 const data = [
     { id: 1, name: "Chuột", price: 100 },

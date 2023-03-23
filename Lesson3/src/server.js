@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
-import productRouter from './routers/product'
-import fileRouter from './routers/file'
+import productRouter from './routers/product.js'
+import fileRouter from './routers/file.js'
 
 export const __filename = fileURLToPath(import.meta.url);
 export const __dirname = path.dirname(__filename);
@@ -31,7 +31,7 @@ app.use('/upload', fileRouter)
 // 2. Connect với MongoDB
 // 3. Tạo model
 // 4. Query trong controller
-mongoose.connect("mongodb://localhost:27017/we17317")
+mongoose.connect("mongodb://localhost:27017/test")
 .then(() => console.log("Connect to db sucessfully"))
 
 app.get('/', (req, res) => {
