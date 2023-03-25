@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "init": "^0.1.2",
+    "joi": "^17.9.1",
+    "mongoose": "^7.0.2",
+    "nodemon": "^2.0.22"
+  },
+  "name": "lesson5",
+  "description": "1.Tao moi truong npm\r 2.Cai cac pakage express mongoose\r 3.Cau hinh package.json\r 4.Tao file src/server.js va run server + connect DB\r 5.MVC\r 6.Models\r 7.Controllers CRUD\r 8.Router\r 9.Middleware\r 10.body-parser\r 11.Validate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-specifier-resolution=node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
