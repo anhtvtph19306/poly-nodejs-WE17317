@@ -12,3 +12,17 @@ export const getProduct = async(req,res)=>{
         })
     }
 }
+
+export const getProductId = async(req,res)=>{
+    try {
+        const id = req.params.id
+        const data = await product.findById()
+        res.send({
+            message: "lấy dữ liệu db thành công"
+        })
+    } catch (err) {
+        res.status(500).send({
+            message:err
+        })
+    }
+}
