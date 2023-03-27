@@ -1,17 +1,33 @@
+
 import mongoose from "mongoose";
 const {Schema} = mongoose
 
+const Image = new Schema({
+    base_url: {
+        type: String,
+        required: true
+    },
+    is_gallery: Boolean,
+    label: String
+})
+
 const product = new Schema({
-    name:{
-        type:String,
-        require :true
+    name: {
+        type: String,
+        required: true
     },
-    price:{
-        type:Number,
+    price: Number,
+    original_price: {
+        type: Number,
+        required: true
     },
-    createdAt:{
-        type: Date,
-        default:Date.now
+    description: {
+        type: String,
+        required: true
+    },
+    images: {
+        type: [Image],
+        required: true
     }
 })
 
