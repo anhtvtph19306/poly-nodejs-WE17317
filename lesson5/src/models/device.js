@@ -1,5 +1,5 @@
-
 import mongoose from "mongoose";
+
 const {Schema} = mongoose
 
 const Image = new Schema({
@@ -11,12 +11,12 @@ const Image = new Schema({
     label: String
 })
 
-const product = new Schema({
+const Device = new Schema({
     name: {
         type: String,
         required: true
     },
-    price:{type: Number,},
+    price: Number,
     original_price: {
         type: Number,
         required: true
@@ -31,4 +31,4 @@ const product = new Schema({
     }
 })
 
-export default mongoose.model("product",product)
+export default mongoose.model("device", Device)

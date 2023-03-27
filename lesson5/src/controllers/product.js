@@ -1,16 +1,6 @@
 import product from "../models/product";
 import Joi from "joi"
 
-
-const Specification = Joi.object({
-    name: Joi.string().required(),
-    attributes: Joi.array().items(Joi.object({
-        code: Joi.string().required(),
-        name: Joi.string().required(),
-        value: Joi.string().required(),
-    })).min(1).required()
-})
-
 const productSchema = Joi.object({
     name: Joi.string().required(),
     price: Joi.number()
