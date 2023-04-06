@@ -17,7 +17,7 @@ const Specification = Joi.object({
 //     label: Joi.string(),
 //     large_url: Joi.string(),
 //     medium_url: Joi.string(),
-//     position: Joi.string(),
+//     position: Joi.string().allow(null),
 //     small_url: Joi.string(),
 //     thumbnail_url: Joi.string()
 // })
@@ -27,7 +27,7 @@ const productSchema = Joi.object({
     original_price: Joi.number(),
     description: Joi.string().required(),
     specifications: Joi.array().items(Specification).min(1).required(),
-    // images: Joi.array().items(images).min(1).required
+    // images: Joi.array().items(images).min(1).required()
 })
 
 export const getProduct = async(req,res)=>{

@@ -1,0 +1,20 @@
+{
+  "name": "poly-nodejs-we17317",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhtvtph19306/poly-nodejs-WE17317.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhtvtph19306/poly-nodejs-WE17317/issues"
+  },
+  "homepage": "https://github.com/anhtvtph19306/poly-nodejs-WE17317#readme"
+}
