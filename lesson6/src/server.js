@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 import userRouter from "./routers/user";
 import productRouter from "./routers/product";
 import invoiceRouter from "./routers/invoice";
-
+import deviceRouter from "./routers/device"
 const app = express()
 const port = 8080
 
@@ -20,6 +20,7 @@ app.use(bodyParser.json())
 app.use('/auth', userRouter)
 app.use('/product', productRouter)
 app.use('/api', invoiceRouter)
+app.use("/dev",deviceRouter)
 
 
 // MongoDB
